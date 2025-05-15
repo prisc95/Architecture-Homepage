@@ -4,7 +4,13 @@ import domReady from '@roots/sage/client/dom-ready';
  * Application entrypoint
  */
 domReady(async () => {
-  // ...
+  
+  const menuIcon = document.getElementById("menu-icon");
+  const navigation = document.querySelector(".navbar");
+
+  menuIcon.addEventListener("click", function(){
+      navigation.classList.toggle("show");
+  });
 });
 
 /**

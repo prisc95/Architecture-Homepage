@@ -1,0 +1,136 @@
+
+
+header.banner {
+    
+    section.navbar {
+    width: 100vw;
+    height: 15vh;
+    z-index: 2;
+
+        &.show{
+
+            .navigation{
+                    top: 0;
+     }
+    }
+
+     
+    .container {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .img-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-basis: 40%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    
+        .right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 5px;
+
+         .searchbar {
+                display: flex;
+                height: 35%;
+                width: 70%;
+                border-radius: 10px;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $secondary-400;
+                margin-right: 5%;
+
+                input {
+                    background-color: $secondary-400;
+                    margin-left: 15px;
+                    border: none;
+                    
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                i {
+                    font-size: $text-md;
+                    margin-right: 15px;
+                    color: $secondary-950;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $secondary-500;
+                        font-size: $text-lg;
+                    }
+                }
+
+            }
+
+        .burger-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            cursor: pointer;
+           
+
+            i {
+                font-size: $text-xl;
+                 z-index: 999
+            }
+        }
+    }
+    }
+
+     .navigation {
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $background-color;
+                top: -100vh;
+                left: 0;
+                transition: top .3s;
+
+                a {
+                   text-decoration: none;
+                   font-family: $font-xl;
+                   font-size: $text-xxxl;
+                   color: #FFF;
+
+                   &:hover {
+                    border-bottom: 8px solid $primary-500;
+                   }
+                }
+
+                
+
+}
+
+}}
