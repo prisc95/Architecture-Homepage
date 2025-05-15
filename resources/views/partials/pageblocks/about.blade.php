@@ -8,17 +8,20 @@
             <button>Lees meer</button>
         </div>
 
+            
         <div class="right">
-            <div class="frame"></div>
+           
             <div class="img-wrapper">
                 <img src="wp-content\themes\sage\resources\images\about.jpg" alt="about-img">
             </div>
+
+               <div class="bottom">
+            <h1>20 JAAR</h1>
+            <h2>Ervaren werken</h2>
+        </div>
         </div>
 
-        <div class="bottom">
-            <h1>20 jaar</h1>
-            <h3>Ervaren werken</h3>
-        </div>
+     
         
     </div>
 </section>
