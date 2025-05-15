@@ -37,10 +37,11 @@ section.hero {
                         flex-direction: row;
 
                                 h1 {
+                                    font-family: serif;
                                     font-size: 5.5rem;
 
                                     span {
-                                    
+                                        font-family: $font-xl;
                                         padding-right: 25px;
                                     }
                                 }
