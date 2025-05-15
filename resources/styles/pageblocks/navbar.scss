@@ -68,6 +68,10 @@ header.banner {
                     background-color: $secondary-400;
                     margin-left: 15px;
                     border: none;
+
+                    &::placeholder{
+                        color: #FFF;
+                    }
                     
 
                     &:focus {
@@ -78,11 +82,10 @@ header.banner {
                 i {
                     font-size: $text-md;
                     margin-right: 15px;
-                    color: $secondary-950;
+                    color: #FFF;
 
                     &:hover {
                         cursor: pointer;
-                        color: $secondary-500;
                         font-size: $text-lg;
                     }
                 }
