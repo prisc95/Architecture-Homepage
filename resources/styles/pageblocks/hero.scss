@@ -1,0 +1,63 @@
+section.hero {
+    height: 90vh;
+
+    .container {
+
+        justify-content: flex-start;
+        align-items: flex-end;
+        opacity: 1;
+        
+           &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(~@images/landing-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: 0;
+          }
+
+          .banner {
+                width: 100%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                z-index: 1;
+            
+            
+                    .header {
+                        width: 100%;
+                        height: 60%;
+                        display: flex;
+                        flex-direction: row;
+
+                                h1 {
+                                    font-size: 5.5rem;
+
+                                    span {
+                                    
+                                        padding-right: 25px;
+                                    }
+                                }
+                    }
+
+                    .content {
+                        width: 45%;
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 25px;
+
+                    
+                    }
+    }
+        
+    }
+}
