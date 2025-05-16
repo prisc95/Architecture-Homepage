@@ -1,68 +1,64 @@
-section { 
-    position: relative;
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $background-color;
+
+  width: 100vw;
+
+  .container {
+    width: 90%;
+    height: 90%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: $background-color;
+    h1 {
+      font-size: $text-xl;
 
-    width: 100vw;
-
-
-    
-
-    .container {
-        width: 80%;
-        height: 80%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
-        h1 {
-            font-size: $text-xl;
-            
-
-            span {
-                color: $primary-500;
-            }
-        }
-
-        h2 {
-            font-size: $text-lg;
-        }
-
-        h3,
-        p {
-            font-size: $text-md;
-        }
-
-        h1,
-        h2,
-        h3,
-        p {
-            font-family: $font-md;
-            color: #FFF;
-            margin: 0;
-        }
+      span {
+        color: $primary-500;
+      }
     }
 
-    button { 
-        width: 15rem;
-        height: 4rem;
-        background-color: transparent;
-        border: .3rem solid #FFF;
-        font-family: $font-md;
-        font-size: $text-lg;
-        font-weight: $font-w800;
-        color: #FFF;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #FFF;
-            color: $primary-500;
-            transition: all ease 0.7s;
-        }
+    h2 {
+      font-size: $text-lg;
     }
+
+    h3,
+    p {
+      font-size: $text-md;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      font-family: $font-md;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  button {
+    width: 15rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.3rem solid #fff;
+    font-family: $font-md;
+    font-size: $text-lg;
+    font-weight: $font-w800;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      color: $primary-500;
+      transition: all ease 0.7s;
+    }
+  }
 }
