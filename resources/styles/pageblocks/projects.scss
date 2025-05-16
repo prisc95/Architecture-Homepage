@@ -1,0 +1,78 @@
+section.projects {
+  .container {
+    width: 90%;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px 0;
+
+    h1 {
+      font-size: $text-xxxl;
+      padding-bottom: 25px;
+    }
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      .card {
+        position: relative;
+        width: 35vw;
+        height: 50vh;
+        overflow: hidden;
+        cursor: pointer;
+        .img-wrapper {
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .content {
+          position: absolute;
+          visibility: hidden;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          transition: background-color 0.6s;
+          padding: 2rem 1rem;
+          border-top: 3px solid $primary-500;
+
+          h1 {
+            font-size: $text-lg;
+            padding-bottom: 15px;
+          }
+        }
+
+        &:hover {
+          .content {
+            background-color: rgba(0, 0, 0, 0.9);
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .bottom {
+      align-self: flex-end;
+      border-right: 1rem solid #dba81b;
+      text-align: right;
+      padding-right: 2rem;
+
+      h1 {
+        font-family: $font-xl;
+        font-size: $text-xxxl;
+        color: $secondary-400;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+}

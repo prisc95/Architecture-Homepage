@@ -57,7 +57,7 @@
 
         <div class="bottom">
             <h1>Awesome</h1>
-            <h3>Designs</h3>
+            <h2>Designs</h2>
         </div>
 
     </div>

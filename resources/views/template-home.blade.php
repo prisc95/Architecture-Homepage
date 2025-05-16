@@ -10,8 +10,8 @@
     @include('partials.content-page') --}}
     @include('partials.pageblocks.hero')
     @include('partials.pageblocks.about')
-    {{-- @include('partials.pageblocks.projects')
-    @include('partials.pageblocks.customers')
+    @include('partials.pageblocks.projects')
+    {{-- @include('partials.pageblocks.customers')
     @include('partials.pageblocks.contact') --}}
   @endwhile
 @endsection
