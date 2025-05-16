@@ -1,76 +1,62 @@
 section.about {
+  .container {
+    width: 90%;
 
-    .container {
+    .left {
+      display: flex;
+      flex-basis: 40%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 35px;
 
-        width: 90%;
+      h1 {
+        width: 80%;
+        font-size: $text-xxxl;
+      }
 
-        .left {
-            display: flex;
-            flex-basis: 40%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 35px;
+      button {
+        border: 0.3rem solid $primary-500;
+        color: $primary-500;
 
-            h1 {
-                width: 80%;
-                font-size: $text-xxxl;
-            }
-
-            button {
-                border: .3rem solid $primary-500;
-                color: $primary-500;
-   
-                    &:hover {
-                        background-color: $primary-500;
-                        color: #FFF;
-                        transition: all ease 0.7s;
-                    }
-            }
-
-
-
+        &:hover {
+          background-color: $primary-500;
+          color: #fff;
+          transition: all ease 0.7s;
         }
-
-        .right {
-            display: flex;
-            flex-basis: 60%;
-            flex-direction: column;
-            align-items: flex-end;
-            padding: 50px 0;
-            gap: 150px;
-
-
-            .img-wrapper {
-                    width: 70%;
-                    height: auto;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            
-            .bottom {
-                    border-right: 1rem solid #dba81b;
-                    text-align: right;
-                    padding-right: 2rem;
-
-                    h1 {
-                        font-family: $font-xl;
-                        font-size: $text-xxxl;
-                        color: $secondary-400;
-                        
-                    }
-
-
-             
-            }
-
-        }
-
-
+      }
     }
+
+    .right {
+      display: flex;
+      flex-basis: 60%;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 50px 0;
+      gap: 150px;
+
+      .img-wrapper {
+        width: 70%;
+        height: auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .bottom {
+        border-right: 1rem solid #dba81b;
+        text-align: right;
+        padding-right: 2rem;
+
+        h1 {
+          font-family: $font-xl;
+          font-size: $text-xxxl;
+          color: $secondary-400;
+        }
+      }
+    }
+  }
 }
