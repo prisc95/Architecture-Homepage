@@ -126,3 +126,31 @@ header.banner {
     }
   }
 }
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  header.banner {
+    section.navbar {
+      .container {
+        .right {
+          .searchbar {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  header.banner {
+    section.navbar {
+      .container {
+        .right {
+          .searchbar {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
