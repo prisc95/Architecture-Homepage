@@ -3,7 +3,7 @@
     <div class="container">
         <h1 id="heading">Klanten</h1>
         <div class="content">
-            <div class="card">
+            <div class="card card1">
                 <div class="img-wrapper">
                     <img src="wp-content\themes\sage\resources\images\customer1.jpg" alt="customer-img">
                 </div>

@@ -39,6 +39,7 @@ section.customers {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
           }
         }
         .content {
@@ -77,6 +78,41 @@ section.customers {
       }
       h2 {
         margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+  section.customers {
+    .container {
+      .content {
+        .card1 {
+          .img-wrapper {
+            img {
+              object-position: -120px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  section.customers {
+    .container {
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        .card1 {
+          .img-wrapper {
+            img {
+              object-position: -120px;
+            }
+          }
+        }
       }
     }
   }
