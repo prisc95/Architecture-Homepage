@@ -76,3 +76,35 @@ section.projects {
     }
   }
 }
+
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+  section.projects {
+    .container {
+      h1 {
+        padding-top: 100px;
+      }
+      .cards {
+        flex-wrap: wrap;
+        .card {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  section.projects {
+    .container {
+      h1 {
+        padding-top: 50px;
+      }
+      .cards {
+        flex-wrap: wrap;
+        .card {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
